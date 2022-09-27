@@ -9,6 +9,7 @@ RUN apt-get update -qq && \
         python3 \
         python3-pip \
         python3-tk \
+        libusb-1.0.0-dev \
         && \
     pip3 install -r requirements.txt && \
     apt-get remove -yqq \
