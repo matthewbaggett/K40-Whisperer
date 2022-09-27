@@ -1,4 +1,4 @@
-#Running k40 whisperer as a GUI docker application:
+# Running k40 whisperer as a GUI docker application:
 
 `Run ./k40_docker.sh`
 from the repo, or directly run
