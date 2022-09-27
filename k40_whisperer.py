@@ -374,7 +374,7 @@ class Application(Frame):
         self.t_timeout.set("200")
         self.n_timeouts.set("30")
 
-        self.HOME_DIR    = os.path.expanduser("~")
+        self.HOME_DIR    = os.getenv('K40_HOME', os.path.expanduser("~"))
         
         if not os.path.isdir(self.HOME_DIR):
             self.HOME_DIR = ""

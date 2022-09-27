@@ -684,7 +684,7 @@ class SVG_READER(inkex.Effect):
 
     def Make_PNG(self):
         #create OS temp folder
-        tmp_dir = tempfile.mkdtemp(dir=os.environ["HOME"] + "/tmp")
+        tmp_dir = tempfile.mkdtemp()
         #tmp_dir = self.tempDir()
         if self.inkscape_exe != None:
             try:                
@@ -771,7 +771,7 @@ class SVG_READER(inkex.Effect):
 
     def convert_text2paths(self):
         #create OS temp folder
-        tmp_dir = tempfile.mkdtemp(dir=os.environ["HOME"] + "/tmp")
+        tmp_dir = tempfile.mkdtemp()
         #tmp_dir = self.tempDir()
         if self.inkscape_exe != None:
             try:
